@@ -90,9 +90,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-REST_FRAMEWORK = {
-    'COERCE_DECIMAL_TO_STRING': False
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -120,3 +117,12 @@ try:
     from cars_project.local_settings import *
 except ImportError:
     pass
+
+
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+}
+
+
+
+

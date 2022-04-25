@@ -22,7 +22,7 @@ def cars_list(request):
 def car_detail(request, pk):
     car = get_object_or_404(Car, pk=pk)
     if request.method == 'GET':
-        serializer = CarSerializer(car);
+        serializer = CarSerializer(car)
         return Response(serializer.data)
     elif request.method == 'PUT':
         serializer = CarSerializer(car, data=request.data)
